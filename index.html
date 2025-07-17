@@ -3,23 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hamburger Menu</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Profile - Akhil Azad</title>
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="logo">MySite</div>
-    <input type="checkbox" id="menu-toggle" />
-    <label for="menu-toggle" class="hamburger">&#9776;</label>
+  <header>
+    <h1>Hyy!! My name is Akhil Azad</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2yRv39FW-ylFJO1eX7t7yrT5DlxhSn4Xw1g&s" alt="Profile Photo" />
+  </header>
 
-    <ul class="menu">
+  <!-- Hamburger Menu -->
+  <nav>
+    <input type="checkbox" id="toggle" />
+    <label class="hamburger" for="toggle">&#9776;</label>
+    <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>Hello! I am Akhil, a passionate tech enthusiast who loves coding and fitness. Welcome to my profile page.</p>
+    </section>
+
+    <section>
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Bodybuilding</li>
+        <li>Recording Myself</li>
+        <li>Creating Social Media Content</li>
+        <li>Learning about AI</li>
+      </ul>
+    </section>
+
+    <form>
+      <h3 style="text-align:center; margin-bottom:10px;">Let's Connect</h3>
+      <table>
+        <tr>
+          <td><label for="fullname">Full Name:</label></td>
+          <td><input type="text" id="fullname" name="fullname" required /></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required /></td>
+        </tr>
+        <tr>
+          <td><label for="message">Message:</label></td>
+          <td><textarea id="message" name="message" minlength="10" required></textarea></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" value="Submit" /></td>
+        </tr>
+      </table>
+    </form>
+  </main>
 
 </body>
 </html>
